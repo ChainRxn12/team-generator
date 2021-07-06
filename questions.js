@@ -214,7 +214,7 @@ const bottomHtmlFile = () => {
 };
 
 const generateHTML = () => {
-   ` <!DOCTYPE html>
+   return ` <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -291,7 +291,7 @@ const generateMgr = (manager) => {
 
 //add bottom of html doc
 const generateBtm = () => {
-    `</body>
+    return `</body>
     </html>`
 
 }
