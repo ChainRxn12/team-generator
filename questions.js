@@ -3,6 +3,7 @@ const inquirer = require('inquirer');
 //require fs
 const fs = require('fs');
 
+
 //require team files
 const Engineer = require('./lib/engineer');
 const Manager = require('./lib/manager');
@@ -170,7 +171,7 @@ const managerQuestions = () => {
                 answers.name,
                 answers.id,
                 answers.email,
-                answers.office,
+                answers.officeNumber,
             );
             managers.push(newManager);
             compileTeamMember();
@@ -210,7 +211,7 @@ const internGenerator = () => {
 
 //append html bottom
 const bottomHtmlFile = () => {
-    fs.appendFileSync('index.html', generateBtm);
+    fs.appendFileSync('index.html', generateBtm());
 };
 
 const generateHTML = () => {
@@ -222,7 +223,7 @@ const generateHTML = () => {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="../dist/style.css">
+        <link rel="stylesheet" href="./dist/style.css">
     <title>Team Generator</title>
 </head>
 <body>
@@ -244,11 +245,11 @@ const generateIntern = (intern) => {
         </div>
     </div>    
             <div class="employee">
-                <p>Name:${intern.name}</p>
-                <p>Email:${intern.email}</p>
-                <p>Id:${intern.id}</p>
-                <p>Role:${intern.role}</p>
-                <p>School:${intern.school}</p>
+                <p>Name: ${intern.name}</p>
+                <p>Email: <a href="mailto:${intern.email}">${intern.email}</a></p>
+                <p>Id: ${intern.id}</p>
+                <p>Role: ${intern.role}</p>
+                <p>School: ${intern.school}</p>
             </div>
 </div>`
 }
@@ -263,10 +264,10 @@ const generateEng = (engineer) => {
     </div>
             <div class="employee">
                 <p>Name: ${engineer.name}</p>
-                <p>Email: ${engineer.email}</p>
+                <p>Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
                 <p>Id: ${engineer.id}</p>
                 <p>Role: ${engineer.role}</p>
-                <p>Github: ${engineer.github}</p>
+                <p>Github: <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
             </div>
 </div>`
 }
@@ -281,10 +282,10 @@ const generateMgr = (manager) => {
     </div>
             <div class="employee">
                 <p>Name: ${manager.name}</p>
-                <p>Email: ${manager.email}</p>
+                <p>Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
                 <p>Id: ${manager.id}</p>
                 <p>Role: ${manager.role}</p>
-                <p>Office Number: ${manager.office}</p>
+                <p>Office Number: ${manager.officeNumber}</p>
         </div>
 </div>`
 }
