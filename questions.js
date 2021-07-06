@@ -89,7 +89,7 @@ const engineerQuestions = () => {
             {
                 type: 'input',
                 name: 'github',
-                message: 'What is engineers github username?',
+                message: 'What is engineers github username (case sensitive)?',
             },
         ])
         .then((answers) => {
