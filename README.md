@@ -39,15 +39,15 @@
   
 ## Contributing
   
-Pull requests are welcome.  Please Create a new issue if you would like to be a contributor.
+*  Pull requests are welcome.  Please Create a new issue if you would like to be a contributor.
   
 ## Tests
   
-* Tests were conducted through jestjs.io 
+*  Tests were conducted through jestjs.io 
   
 ## License
   
-This project is licensed under the MIT License - see the [License](https://choosealicense.com/licenses/mit/) page.
+*  This project is licensed under the MIT License - see the [License](https://choosealicense.com/licenses/mit/) page.
   
 ## Author
   
