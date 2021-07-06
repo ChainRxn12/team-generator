@@ -65,9 +65,7 @@ Location: Live Oak, TX
 
 ![teamgen2](https://user-images.githubusercontent.com/78969397/124672679-0f114380-de7d-11eb-93db-de3fe4779b2a.png)
 
-![teamgen3](https://user-images.githubusercontent.com/78969397/124672708-1c2e3280-de7d-11eb-8dcb-12596ead26b8.png)
-
-
+![teamgen4](https://user-images.githubusercontent.com/78969397/124676951-218f7b00-de85-11eb-9145-610dd8d64f19.png)
 
 
 ## Video
